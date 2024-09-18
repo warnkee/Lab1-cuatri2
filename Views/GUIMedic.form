@@ -57,7 +57,7 @@
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          <Component id="txtNombre1" min="-2" pref="152" max="-2" attributes="0"/>
+                          <Component id="txtEspecialidad" min="-2" pref="152" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -82,8 +82,8 @@
                               <Group type="102" attributes="0">
                                   <EmptySpace min="73" pref="73" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="txtTelefono1" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
-                                      <Component id="txtcedula1" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="txtSalario" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                                      <Component id="txtNumeroMedico" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
                                       <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="0" pref="89" max="32767" attributes="0"/>
@@ -136,7 +136,7 @@
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtcedula" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtcedula1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtNumeroMedico" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -146,7 +146,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtNombre" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="txtNombre1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtEspecialidad" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -156,7 +156,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="txtxFecha" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtTelefono1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtSalario" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -274,7 +274,7 @@
             <Property name="text" type="java.lang.String" value="Numero Medico"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JFormattedTextField" name="txtcedula1">
+        <Component class="javax.swing.JFormattedTextField" name="txtNumeroMedico">
           <Properties>
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
               <Format format="#" subtype="-1" type="0"/>
@@ -292,9 +292,9 @@
             <Property name="text" type="java.lang.String" value="Especialidad"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="txtNombre1">
+        <Component class="javax.swing.JTextField" name="txtEspecialidad">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombre1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtEspecialidadActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
@@ -308,7 +308,7 @@
             <Property name="text" type="java.lang.String" value="Salario"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JFormattedTextField" name="txtTelefono1">
+        <Component class="javax.swing.JFormattedTextField" name="txtSalario">
           <Properties>
             <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor">
               <Format format="#" subtype="-1" type="0"/>
