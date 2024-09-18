@@ -5,7 +5,7 @@
 package Views;
 
 import Controllers.CustomerController;
-import Models.Customer;
+import Models.Clientes;
 import Utils.UtilDate;
 import java.time.LocalDate;
 import java.util.List;
@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
  *
  * @author Saliim
  */
-public class CustomerFrame extends javax.swing.JFrame implements IView<Customer> {
+public class CustomerFrame extends javax.swing.JFrame implements IView<Clientes> {
 
     CustomerController controller;
 
@@ -205,12 +205,12 @@ this.read();        // TODO add your handling code here:
     }
 
     @Override
-    public void display(Customer element) {
+    public void display(Clientes element) {
         JOptionPane.showMessageDialog(this, element.toString());
     }
 
     @Override
-    public void displayAll(List<Customer> list) {
+    public void displayAll(List<Clientes> list) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

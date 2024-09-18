@@ -4,8 +4,9 @@
  */
 package Controllers;
 
-import Models.Customer;
+import Models.Clientes;
 import Models.IManager;
+import Models.IMoreManager;
 import Views.IView;
 import java.time.LocalDate;
 import java.util.List;
@@ -15,20 +16,20 @@ import java.util.List;
  * @author jprod
  */
 public class CustomerController {
-    private IManager<Customer> model;
-    private IView<Customer> view;
+    private IMoreManager<Clientes> model;
+    private IView<Clientes> view;
 
-    public CustomerController(IManager model, IView view) {
+    public CustomerController(IMoreManager model, IView view) {
         this.model = model;
         this.view = view;
     }
 
     public void insert(int id,String name,LocalDate birthdate,String phone,String email){
-        Customer customer;
+        Clientes customer;
         if(phone!=null){
-            customer=new Customer(id,name,birthdate,phone,email);
+            customer=new Clientes(id,name,birthdate,phone,email);
         }else{
-            customer=new Customer(id,name,birthdate,email);
+            customer=new Clientes(id,name,birthdate,email);
         }
         if (model.add(customer)){
            view.showMessage("Agregado.");
@@ -38,8 +39,8 @@ public class CustomerController {
     }
 
     public void update(int id, String phone){
-        Customer customer = new Customer(id);
-        customer=model.get(customer);
+        Clientes customer = new Clientes(id);
+        customer=(Clientes) model.get(customer);
         if (customer!=null){
             customer.setPhone(phone);
             if (model.set(customer))
@@ -52,8 +53,8 @@ public class CustomerController {
     }
     
     public void delete(int id){        
-        Customer customer = new Customer(id);
-        customer=model.get(customer);
+        Clientes customer = new Clientes(id);
+        customer=(Clientes) model.get(customer);
         if (customer!=null){
             model.remove(customer);
             view.showMessage("Cliente eliminado.");
@@ -64,8 +65,8 @@ public class CustomerController {
     
     
     public void read(int id){
-        Customer customer = new Customer(id);
-        customer=model.get(customer);
+        Clientes customer = new Clientes(id);
+        customer=(Clientes) model.get(customer);
         if (customer!=null){
             view.display(customer);
         }else{
@@ -74,7 +75,7 @@ public class CustomerController {
     }
     
     public void readAll(){
-        List<Customer> customers=model.getAll();
+        List<Clientes> customers=model.getAll();
         if(customers!=null){
             view.displayAll(customers);
         }else{

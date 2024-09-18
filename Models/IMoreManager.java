@@ -4,18 +4,11 @@
  */
 package Models;
 
-import java.util.List;
-
 /**
  *
- * @author jprod
+ * @author jdarg
  */
-public interface IManager<T> {
-    public boolean add(T element);
-    
-    public T get(T element);
-        
-    public boolean set(T element);
-        
-    public List getAll();  
+public interface IMoreManager<T> extends IManager<T>{
+        public boolean remove(T element);
+
 }

@@ -7,7 +7,7 @@ import java.time.LocalDate;
  *
  * @author jprod
  */
-public class Customer {
+public class Clientes {
     private int id;
     private String name;
     private LocalDate birthdate;
@@ -46,7 +46,7 @@ public class Customer {
         this.email = email;
     }
 
-    public Customer(int id, String name, LocalDate birthdate,String phone,String email) {
+    public Clientes(int id, String name, LocalDate birthdate,String phone,String email) {
         this.id = id;
         this.name = name;
         this.birthdate = birthdate;
@@ -54,15 +54,15 @@ public class Customer {
         this.email=email;
     }
     
-    public Customer(int id, String name, LocalDate birthdate,String email) {
+    public Clientes(int id, String name, LocalDate birthdate,String email) {
         this(id,name,birthdate,null,email);
     }
     
-    public Customer(int id) {
+    public Clientes(int id) {
         this(id,null,null,null,null);
     }
     
-    public Customer() {
+    public Clientes() {
         this(0);
     }
 

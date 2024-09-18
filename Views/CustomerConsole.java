@@ -5,8 +5,7 @@
 package Views;
 
 import Controllers.CustomerController;
-import Models.Customer;
-import Models.CustomerList;
+import Models.Clientes;
 import Utils.UtilConsole;
 import Utils.UtilDate;
 import java.time.LocalDate;
@@ -18,7 +17,7 @@ import java.util.Scanner;
  *
  * @author jprod
  */
-public class CustomerConsole implements IView<Customer> {
+public class CustomerConsole implements IView<Clientes> {
     CustomerController controller;
 
     public void setController(CustomerController controller) {
@@ -107,14 +106,14 @@ public class CustomerConsole implements IView<Customer> {
     }
     
     @Override
-    public void display(Customer customer){
+    public void display(Clientes customer){
         UtilConsole.print(customer.toString(), UtilConsole.COLOR_BLUE);
         UtilConsole.getInputString("Presione enter para continuar");
     }
     
     @Override
-    public void displayAll(List<Customer> customers){
-        for(Customer customer:customers){
+    public void displayAll(List<Clientes> customers){
+        for(Clientes customer:customers){
             UtilConsole.print(customer.toString(), UtilConsole.COLOR_GREEN);
         }
         UtilConsole.getInputString("Presione enter para continuar");

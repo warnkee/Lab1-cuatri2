@@ -5,7 +5,6 @@
 package main;
 
 import Controllers.CustomerController;
-import Models.CustomerList;
 import Models.CustomerSet;
 import Views.CustomerConsole;
 import Views.CustomerFrame;
