@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * @author Saliim
  */
-public class ListaCitas implements IManager {
+public class ListaCitas implements IManager<Citas> {
 
 private Set<Citas> listaCita;
 
@@ -52,6 +52,8 @@ private Set<Citas> listaCita;
         }
  return new ArrayList<>(listaCita);    
     }
+
+ 
     
     }
     

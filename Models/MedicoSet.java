@@ -13,7 +13,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class MedicoSet implements IManager<Medico> {
+public class MedicoSet implements IMoreManager<Medico> {
     private Set<Medico> medicos;
 
     // Constructor
