@@ -53,7 +53,15 @@ private Set<Citas> listaCita;
  return new ArrayList<>(listaCita);    
     }
 
- 
+ public Citas BuscarID(int id){
+     
+   for(Citas c:listaCita){
+      if(c.getId()==id){
+          return c;
+      } 
+   } 
+   return null;
+ }
     
     }
     

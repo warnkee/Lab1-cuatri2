@@ -11,22 +11,25 @@ public class Citas {
   private Medico medico;
   private String motivo;
   private boolean activa;
+  private int id;
 
-    public Citas(LocalDate fecha, LocalDate hora, Clientes cliente, Medico medico, String motivo, boolean activa) {
+    public Citas(LocalDate fecha, LocalDate hora, Clientes cliente, Medico medico, String motivo,int id) {
         this.fecha = fecha;
         this.hora = hora;
         this.cliente = cliente;
         this.medico = medico;
         this.motivo = motivo;
-        this.activa = activa;
+        this.activa = true;
+        this.id = id;
     }
 
     public Citas() {
     }
 
-    public Citas(LocalDate fecha, LocalDate hora) {
+    public Citas(LocalDate fecha, LocalDate hora,int id) {
         this.fecha = fecha;
         this.hora = hora;
+        this.id = id;
     }
 
     public boolean isActiva() {
@@ -63,6 +66,10 @@ public class Citas {
         return motivo;
     }
 
+    public int getId() {
+        return id;
+    }
+    
     @Override
     public String toString() {
         return "Citas{" + "fecha=" + fecha + ", hora=" + hora + ", cliente=" + cliente + ", medico=" + medico + ", motivo=" + motivo + '}';
